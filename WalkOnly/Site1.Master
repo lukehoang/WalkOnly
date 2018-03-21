@@ -23,15 +23,21 @@
                     <div class="col-sm-8 col-md-7 py-4">
                         <p class="text-muted">“It’s the temple O. When people ask you where you go to school… you say temple, and they say Oh” — Overheard at Temple (@TUoverheard) February 7, 2014</p>
                     </div>
-                    <div class="col-sm-4 offset-md-1 py-4">
-
+                    <div class="col-sm-4 offset-md-1 py-4" id="sNav">
                         <ul class="list-unstyled">
                             <li><a href="Home.aspx" class="text-white">HOME</a></li>
                             <li><a href="Login.aspx" class="text-white">LOG OUT</a></li>
                         </ul>
                     </div>
+                    <div class="col-sm-4 offset-md-1 py-4" id="aNav">
+                        <ul class="list-unstyled">
+                            <li><a href="Dashboard.aspx" class="text-white">DASHBOARD</a></li>
+                            <li><a href="Login.aspx" class="text-white">LOG OUT</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+
         </div>
         <div class="navbar navbar-dark bg-dark box-shadow">
             <div class="container d-flex justify-content-between">

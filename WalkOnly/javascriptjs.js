@@ -1,13 +1,21 @@
 ﻿
-window.onload = function () {
     var state = 's';
 
     if (window.location.pathname == "/Login.aspx") {
         document.getElementById("navToggler").style.display = "none";
         document.getElementById("admin").style.display = "none";
         document.getElementById("btn_student").classList.add("active");
-        state = 'a';
+        state = 's';
     }
+    else if (window.location.pathname == "/home.aspx") {
+        document.getElementById("aNav").style.display = "none";
+        document.getElementById("sNav").style.display = "block";
+    }
+    else if (window.location.pathname == "/dashboard.aspx" || window.location.pathname == "/student_info.aspx") {
+        document.getElementById("sNav").style.display = "none";
+        document.getElementById("aNav").style.display = "block";
+    }
+   
 
 
     var btn_student_click = function () {
@@ -40,15 +48,12 @@ window.onload = function () {
             return;
         }
         else {
-            window.location.href = "home.aspx";
+            if (state == 's') {
+                window.location.href = "home.aspx";
+            }
+            else
+                window.location.href = "dashboard.aspx"
         }
     };
     document.getElementById("btn_login").addEventListener("click", login_click);
     document.getElementById("btn_loginAdmin").addEventListener("click", login_click);
-
-    var submit_click = function () {
-        alert("Submit successful");
-        window.location.href = "home.aspx";
-    };
-    document.getElementById("Submit").addEventListener("click", submit_click);
-};
