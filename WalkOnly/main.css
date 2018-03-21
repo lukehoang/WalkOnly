@@ -1,0 +1,22 @@
+﻿body { 
+  background: url(https://branding.temple.edu/sites/branding/files/images/blocks/Red_DiamondPattern.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+footer p{
+    color: white;
+}
+.login{
+    padding: 150px 50px 50px 50px;
+    margin: 100px auto;
+    height: 600px;
+}
+.login h1 {
+    color: white;
+}
+
+.mb-4 {
+    width:100%;
+}
